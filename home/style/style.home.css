@@ -1,0 +1,132 @@
+:root {
+    
+    --blackInk: #031927;
+    --SkyBlue: #82C8E5;
+    --whiteSmoke: #F2F0EF;
+    --eletricPurple: #7F00FF; /* Corrigi a cor aqui */
+    --vibrantYellow: #FFDE21; /* Corrigi a cor aqui */
+    
+} /* Sem o ponto e vírgula aqui! */
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit;       /* Faz o link assumir a cor do texto ao redor (preto, por exemplo) */
+}
+
+body {
+
+    background-color: var(--whiteSmoke);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+
+}
+
+.navbar {
+    
+    font-family: 'Judson';
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+h1 {
+    
+    margin-top: 50px;
+    font-size: 128px;
+    width: 100%;
+    
+}
+
+p {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 50px;
+    font-size: 48px;
+    width: 100%;
+    
+}
+
+.button-credits, .start {
+
+    display: inline-block; /* Garante que respeitem as margens */
+    margin: 20px auto;     /* Centraliza o botão */
+    width: 256px;
+    height: 64px;
+    border-radius: 100px;
+    border: 0;
+    font-size: 48px;
+    cursor: pointer;
+    text-decoration: none; /* Caso use tag <a> */
+    line-height: 64px;    /* Centraliza o texto dentro do botão */
+    margin-top: 20px;
+
+}
+
+.start {
+
+    background-color: var(--eletricPurple);
+    color: white;
+
+}
+
+img{
+
+    width: 286px;
+
+}
+
+.bold {
+
+    font-weight: bold;
+
+}
+
+.line {
+    width: 100%;
+    border-top: solid black 6px;
+}
+
+
+
+
+/* Creditos */
+
+table {
+    margin-top: 5%;
+}
+
+td {
+  padding-left: 200px;  
+  padding-right: 200px;  
+}
+
+.text {
+    font-size: 56px;
+    margin-top: 5%
+}
+
+h2{
+    font-size: 64px;
+}
+
+h3{
+    font-size: 48px;
+    opacity: 50%;
+}
+
+.fotosPerfil {
+    border-radius: 100%;
+}
