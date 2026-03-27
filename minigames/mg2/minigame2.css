@@ -16,6 +16,11 @@
     
 }
 
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit;       /* Faz o link assumir a cor do texto ao redor (preto, por exemplo) */
+}
+
 body {
 
     background-color: var(--whiteSmoke);
@@ -37,22 +42,6 @@ body {
     
 }
 
-h1 {
-    
-    margin-top: 50px;
-    font-size: 128px;
-    width: 100%;
-    
-}
-
-p {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-bottom: 50px;
-    font-size: 48px;
-    width: 100%;
-    
-}
 
 .button-credits, .start {
 
@@ -68,27 +57,4 @@ p {
     line-height: 64px;    /* Centraliza o texto dentro do botão */
     margin-top: 20px;
 
-}
-
-.start {
-
-    background-color: var(--eletricPurple);
-    color: white;
-
-}
-
-img{
-
-    width: 286px;
-
-}
-
-.bold {
-
-    font-weight: bold;
-
-}
-
-.line {
-    border-top: solid black 6px;
 }

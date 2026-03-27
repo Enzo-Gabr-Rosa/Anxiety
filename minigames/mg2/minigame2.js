@@ -1,3 +1,4 @@
+console.log("JS carregado")
 function iniciarCorrida(escolha) {
   const bolas = document.querySelectorAll(".bola");
   let vencedor = null;
@@ -6,19 +7,10 @@ function iniciarCorrida(escolha) {
     let pos = 0;
     const limite = bola.parentElement.offsetWidth - 40;
 
-    // 🔥 velocidade definida por cor
-    let velocidade;
-
-    if (bola.classList.contains("amarela")) {
-      velocidade = Math.random() * 0.1 + 0.4; // sempre mais rápida
-    } else if (bola.classList.contains("roxa")) {
-      velocidade = Math.random() * 0.1 + 0.3;
-    } else {
-      velocidade = Math.random() * 0.1 + 0.2; // mais lenta
-    }
-
     let corrida = setInterval(() => {
+      let velocidade = Math.random() * 10;
       pos += velocidade;
+
       bola.style.left = pos + "px";
 
       if (pos >= limite && !vencedor) {
@@ -27,9 +19,9 @@ function iniciarCorrida(escolha) {
 
         setTimeout(() => {
           if (vencedor === escolha) {
-            alert("Alternativa correta!");
+            alert("🎉 Você ganhou!");
           } else {
-            alert("Você perdeu! Tente novamente.");
+            alert("😢 Você perdeu! Vencedor: " + vencedor);
           }
         }, 100);
       }
