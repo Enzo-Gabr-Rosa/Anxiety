@@ -1,34 +1,35 @@
-console.log("JS carregado")
-function iniciarCorrida(escolha) {
-  const bolas = document.querySelectorAll(".bola");
-  let vencedor = null;
+console.log("JS carregado");
 
-  bolas.forEach((bola) => {
-    let pos = 0;
-    const limite = bola.parentElement.offsetWidth - 40;
+let correctValue1 = false;
+let correctValue2 = false;
+let correctValue3 = false;
 
-    let corrida = setInterval(() => {
-      let velocidade = Math.random() * 10;
-      pos += velocidade;
+function jackpot(maxValue, divId){
 
-      bola.style.left = pos + "px";
+    let valorSorteado = Math.floor(Math.random() * (maxValue - 0 + 1)) + 0;
+    let numeroDiv = document.getElementById(divId);
+    
+    numeroDiv.innerHTML = valorSorteado;
 
-      if (pos >= limite && !vencedor) {
-        vencedor = bola.classList[1];
-        clearInterval(corrida);
+    if(valorSorteado == maxValue === 1){
+        
+        
 
-        setTimeout(() => {
-          if (vencedor === escolha) {
-            alert("🎉 Você ganhou!");
-          } else {
-            alert("😢 Você perdeu! Vencedor: " + vencedor);
-          }
-        }, 100);
-      }
+    }
 
-      if (pos >= limite) {
-        clearInterval(corrida);
-      }
-    }, 50);
-  });
+}
+let valorObjetivo = 10;
+
+function fakeJackpot(){
+    const slot4 = document.getElementById("slot4");
+    const prompt = document.getElementById("prompt");
+    let valorSorteado = 0;
+
+    do {
+        valorSorteado = Math.floor(Math.random() * (20 - 0 + 1)) + 0;
+    } while (valorSorteado === valorObjetivo);
+
+    slot4.innerHTML = valorSorteado;
+    valorObjetivo += 10;
+    prompt.innerHTML = `Expected value: ${valorObjetivo}/${valorObjetivo}`
 }

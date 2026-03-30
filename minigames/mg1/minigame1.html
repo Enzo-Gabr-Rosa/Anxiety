@@ -14,32 +14,32 @@
     </div>
 
     <h4>
-      Vote em um dos circulos para ganhar a corrida, o objetivo é observar
+      Pick one of the circles, you need to pay atention
       <br />
-      a corrida até o final e ver se adivinhou corretamento o vencedor.<br />Boa
-      sorte.
+      untill the end and see if you guessed correctly.
+      <br/><br/>
+      Good luck!
     </h4>
 
-    <h2>Vote em um dos círculos</h2>
-
-    <div class="pista">
-      <div class="linha">
-        <div class="bola azul"></div>
+    <div class="track">
+      <div class="line">
+        <div class="ball blue"></div>
       </div>
-      <div class="linha">
-        <div class="bola amarela"></div>
+      <div class="line">
+        <div class="ball yellow"></div>
       </div>
-      <div class="linha">
-        <div class="bola roxa"></div>
+      <div class="line">
+        <div class="ball purple"></div>
       </div>
     </div>
 
-    <div class="botaoCorrida">
-      <button onclick="iniciarCorrida('azul')">Azul</button>
-      <button onclick="iniciarCorrida('amarela')">Amarela</button>
-      <button onclick="teste()">Roxa</button>
+    <div>
+      <button class="blue button-race" disabled onclick="startRace('blue')"></button>
+      <button class="yellow button-race" onclick="startRace('yellow')"></button>
+      <button class="purple button-race" onclick="startRace('purple')"></button>
     </div>
 
+    <button id="next1" class="button-continue" disabled >Continue</button>
 
     <script src="./minigame1.js"></script>
   </body>

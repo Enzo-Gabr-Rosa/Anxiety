@@ -3,20 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corrida das Cores</title>
-    <link rel="stylesheet" href="./minigame1.css">
+    <title>Lucky test</title>
+    <link rel="stylesheet" href="./minigame2.css">
   </head>
   <body>
     <div class="navbar">
-      <button class="button-credits">
+      <button class="button-forgive">
         <a href="../../home/index.home.html">Forgive</a>
       </button>
     </div>
 
     <h4>
-      Vote em um dos circulos para ganhar a corrida, o objetivo é vc ver a
-      corrida até o final e ver se adivinhou corretamento o vencedor.<br />Boa
-      sorte.
+      Roll the numbers untill you get the expected one.
+      <br> <br>
+      Good luck!
     </h4>
+
   </body>
+
+  <div id="slot1" class="slots"> - </div>
+  <p>Expected value: 10/10</p>
+  <button id="roll1" onclick="jackpot(10, 'slot1')">Roll</button>
+
+  <div id="slot2" class="slots"> - </div>
+  <p>Expected value: 25/25</p>
+  <button id="roll2" onclick="jackpot(25, 'slot2')">Roll</button>
+
+  <div id="slot3" class="slots"> - </div>
+  <p>Expected value: 100/100</p>
+  <button id="roll3" onclick="jackpot(100, 'slot3')">Roll</button>
+
+  <div id="slot4" class="slots"> - </div>
+  <p id="prompt">Expected value: 10/10</p>
+  <button id="roll4" onclick="fakeJackpot()">Roll</button>
+
+  <script src="./minigame2.js"></script>
 </html>

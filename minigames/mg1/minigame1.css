@@ -54,19 +54,19 @@ h4 {
   font-size: 36px;
 }
 
-.pista {
+.track {
   width: 80%;
   margin: auto;
 }
 
-.linha {
+.line {
   position: relative;
   height: 60px;
   border-bottom: 2px solid black;
   margin: 20px 0;
 }
 
-.bola {
+.ball {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -76,20 +76,40 @@ h4 {
   top: calc(100% - 20px);
 }
 
-.azul {
+.blue {
   background: lightblue;
 }
-.amarela {
+.yellow {
   background: gold;
 }
-.roxa {
+.purple {
   background: purple;
 }
 
-.botaoCorrida {
+.button-race {
   padding: 10px 20px;
   margin: 10px;
-  border-radius: 20px;
-  border: none;
+  border-radius: 400px;
+  border: solid 12px black;
+  width: 265px;
+  height: 94px;
   cursor: pointer;
+}
+
+.button-race :disabled {
+  opacity: 20%;
+  cursor: not-allowed;
+}
+
+.button-continue {
+  margin-top: 30px;
+  margin-left: 75%;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: white;
+  width: 132px;
+  height: 47px;
+  background-color: var(--blackInk);
+  border: none;
+  border-radius: 400px;
 }
