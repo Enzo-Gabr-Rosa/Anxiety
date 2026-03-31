@@ -1,60 +1,55 @@
 :root {
-    
-    --blackInk: #031927;
-    --SkyBlue: #82C8E5;
-    --whiteSmoke: #F2F0EF;
-    --eletricPurple: #7F00FF; /* Corrigi a cor aqui */
-    --vibrantYellow: #FFDE21; /* Corrigi a cor aqui */
-    
+  --blackInk: #031927;
+  --SkyBlue: #82c8e5;
+  --whiteSmoke: #f2f0ef;
+  --eletricPurple: #7f00ff; /* Corrigi a cor aqui */
+  --vibrantYellow: #ffde21; /* Corrigi a cor aqui */
 } /* Sem o ponto e vírgula aqui! */
 
 * {
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit;       /* Faz o link assumir a cor do texto ao redor (preto, por exemplo) */
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Faz o link assumir a cor do texto ao redor (preto, por exemplo) */
 }
 
 body {
-
-    background-color: var(--whiteSmoke);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
-    text-align: center;
-
+  background-color: var(--whiteSmoke);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center;
 }
 
 .navbar {
-    
-    font-family: 'Judson';
-    background-color: black;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    
+  font-family: "Judson";
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
 }
 
+.button-forgive {
+  display: inline-block; /* Garante que respeitem as margens */
+  margin: 20px auto; /* Centraliza o botão */
+  width: 256px;
+  height: 64px;
+  border-radius: 100px;
+  border: 0;
+  font-size: 48px;
+  cursor: pointer;
+  text-decoration: none; /* Caso use tag <a> */
+  line-height: 64px; /* Centraliza o texto dentro do botão */
+  margin-top: 20px;
+}
 
-.button-credits, .start {
-
-    display: inline-block; /* Garante que respeitem as margens */
-    margin: 20px auto;     /* Centraliza o botão */
-    width: 256px;
-    height: 64px;
-    border-radius: 100px;
-    border: 0;
-    font-size: 48px;
-    cursor: pointer;
-    text-decoration: none; /* Caso use tag <a> */
-    line-height: 64px;    /* Centraliza o texto dentro do botão */
-    margin-top: 20px;
-
+h4 {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 36px;
 }

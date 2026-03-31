@@ -65,6 +65,39 @@ h4 {
     width: 200px;
     border-radius: 20px;
     height: 200px;
-    gap: 20px; /* Espaçamento entre os slots */
-    margin-top: 40px;
+    gap: 40px; /* Espaçamento entre os slots */
+    margin-top: 80px;
+    background-color: var(--SkyBlue);
+}
+
+.roll {
+  margin-top: 15px;
+  color: var(--whiteSmoke);
+  font-size: 36px;
+  width: 152px;
+  height: 64px;
+  border: none;
+  border-radius: 200px;
+  background-color: var(--blackInk);
+}
+
+.correct {
+  color: var(--vibrantYellow);
+}
+
+.expectedValue{
+  font-size: 36px;
+}
+
+.button-continue {
+  margin-top: 30px;
+  margin-left: 75%;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: white;
+  width: 132px;
+  height: 47px;
+  background-color: var(--blackInk);
+  border: none;
+  border-radius: 400px;
 }
