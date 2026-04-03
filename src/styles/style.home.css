@@ -34,7 +34,22 @@ body {
   width: 100%;
 }
 
-.button-forgive {
+h1 {
+  margin-top: 50px;
+  font-size: 128px;
+  width: 100%;
+}
+
+p {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 50px;
+  font-size: 48px;
+  width: 100%;
+}
+
+.button-credits,
+.start {
   display: inline-block; /* Garante que respeitem as margens */
   margin: 20px auto; /* Centraliza o botão */
   width: 256px;
@@ -48,25 +63,65 @@ body {
   margin-top: 20px;
 }
 
-h4 {
-  margin-top: 8%;
-  margin-bottom: 8%;
+.start {
+  background-color: var(--eletricPurple);
+  color: white;
+}
+
+img {
+  width: 286px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.line {
+  width: 100%;
+  border-top: solid black 6px;
+}
+
+/* Creditos */
+
+table {
+  margin-top: 5%;
+}
+
+td {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.text {
+  font-size: 56px;
+  margin-top: 5%;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+  opacity: 50%;
+}
+
+.fotosPerfil {
+  border-radius: 100%;
+}
+li {
   font-size: 36px;
+  margin-top: 20px;
+  text-align: justify;
 }
 
-.timerDisplay {
-  background-color: white;
-  width: 400px;
-  height: 400px;
-  border: solid 12px var(--blackInk);
-  border-radius: 20px;
-  font-size: 128px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+li p {
+  color: var(--eletricPurple);
+  text-align: justify;
 }
+h4 {
 
-.atention{
-  color: var(--eletricPurple)
-
+  font-size: 36px;
+  margin: 5% 15% 3% 15%;
+  text-align: center;
 }

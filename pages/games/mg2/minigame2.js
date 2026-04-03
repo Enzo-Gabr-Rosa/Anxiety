@@ -65,11 +65,12 @@ function verificacaoAcerto(slot, value) {
       sucesso2();
     }
   }
+}
+let valorObjetivo = 10;
 
-  let valorObjetivo = 10;
 
-  function fakeJackpot() {
-    const slot4 = document.getElementById("slot4");
+function fakeJackpot() {
+  const slot4 = document.getElementById("slot4");
     const prompt = document.getElementById("prompt");
     let valorSorteado = 0;
 
@@ -78,14 +79,14 @@ function verificacaoAcerto(slot, value) {
     } while (valorSorteado === valorObjetivo);
 
     slot4.innerHTML = valorSorteado;
-    valorObjetivo += 10;
+    valorObjetivo += 3;
     prompt.innerHTML = `Expected value: ${valorObjetivo}/${valorObjetivo}`;
   }
 
-  function sucesso2() {
-    let botaoContinuar2 = document.getElementById("next2");
-    botaoContinuar2.disabled = false;
 
-    botaoContinuar2.innerHTML = '<a href="../mg3/minigame3.html">Continue<a/>';
-  }
+function sucesso2() {
+  let botaoContinuar2 = document.getElementById("next2");
+  botaoContinuar2.disabled = false;
+
+  botaoContinuar2.innerHTML = '<a href="../mg3/minigame3.html">Continue<a/>';
 }

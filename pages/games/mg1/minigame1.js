@@ -12,12 +12,12 @@ function startRace(choice) {
     
     let speed;
     
-    if (ball.classList.contains("amarela")) {
-      speed = Math.random() * 0.1 + 0.4; // sempre mais rápida
-    } else if (ball.classList.contains("roxa")) {
-      speed = Math.random() * 0.1 + 0.3;
+    if (ball.classList.contains("yellow")) {
+      speed = 0.1 + 0.4; // sempre mais rápida
+    } else if (ball.classList.contains("purple")) {
+      speed = 0.1 + 0.3;
     } else {
-      speed = Math.random() * 0.1 + 0.2; // mais lenta
+      speed = 0.1 + 0.2; // mais lenta
     }
     
     let race = setInterval(() => {
@@ -39,6 +39,7 @@ function startRace(choice) {
             
           } else {
             alert("You lost! Try again.");
+            windows.location.reload();
           }
         }, 100);
       }
